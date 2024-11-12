@@ -72,4 +72,33 @@ export default class Alarmclock extends LightningElement {
             this.minutes.push(val);
         }
     }
-}   
+
+    optionhandler(event){      //handles the hour value,minute value and meridiem value sent from the child dropdown component
+       const{label,value}=event.detail;
+       if(label==="Hour(s)"){
+          this.hourSelected=value;
+       }
+       else if(label==="Minute(s)"){
+          this.minSelected=value;
+       }
+       else if(label==="AM/PM"){
+          this.meridiemSelected=value;
+       }
+    }
+
+    setAlarmHandler(){     //setting the alarm time
+      this.alarmTime=`${this.hourSelected}:${this.minSelected}:${this.meridiemSelected}`
+      this.isAlarmSet=true;
+    }
+
+    clearAlarmHandler(){   //clearing the alarm time
+      this.isAlarmSet=false;
+      this.alarmTime='';
+      this.isAlarmTriggered=false;
+      this.ringtone.pause();
+      const elements=this.template.querySelectorAll('c-clock-dropdown');
+      Array.from(elements).forEach(element=>{
+        element.reset(" ");
+      })
+    }
+}

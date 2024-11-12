@@ -1,0 +1,22 @@
+:host(){
+    --dark-blue:#243356;
+    --white:#ffffff;
+    --yellow:#ffcd0a;
+    --light-blue:#00D9FE;
+    --size-12:12px;
+    --size-14:14px;
+    --size-16:16px;
+    --size-18:18px;
+    --size-20:20px;
+    --size-24:24px;
+    --size-30:30px;
+}
+
+.slds-form-element__label{
+    color: var(--light-blue);
+}
+
+.slds-select{
+    color: var(--dark-blue);
+}
+

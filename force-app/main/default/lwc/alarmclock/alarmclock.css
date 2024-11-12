@@ -1,0 +1,60 @@
+:host(){
+    --dark-blue:#243356;
+    --white:#ffffff;
+    --yellow:#ffcd0a;
+    --light-blue:#00D9FE;
+    --size-12:12px;
+    --size-14:14px;
+    --size-16:16px;
+    --size-18:18px;
+    --size-20:20px;
+    --size-24:24px;
+    --size-30:30px;
+}
+
+.alarm-card{
+    max-width: 440px;
+    width:100%;
+    padding: var(--size-30);
+    background: var(--dark-blue);
+    color: var(--white);
+    border-radius:var(--size-16);
+    margin: var(--size-24) auto;
+}
+
+img{
+    margin: var(--size-20) auto;
+    display: block;
+ }
+
+h1{
+    color:var(--yellow);
+    font-size: 36px;
+    text-align: center;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 48px;
+    color:var(--light-blue);
+    text-align: center;
+    font-weight: 500;
+    margin: var(--size-30) auto;
+}
+
+button{
+    background:var(--yellow);
+    font-size: var(--size-20);
+    padding: var(--size-14);
+    border-color:var(--yellow);
+    color:var(--dark-blue);
+    margin-top: var(--size-12);
+}
+
+.slds-form-element__label{
+    color: var(--light-blue);
+}
+
+.slds-select{
+    color: var(--dark-blue);
+}

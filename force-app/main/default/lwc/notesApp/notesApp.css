@@ -1,0 +1,75 @@
+.app{
+    background: #022451;
+    min-height: 100vh;
+    font-size: 16px;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    height: 300px;
+    width: 300px;
+    background: #fff;
+    border-radius: 12px;
+    margin: 12px;
+}
+
+.box-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dotted-circle{
+    border: 2px solid #022451;
+    border-radius: 50%;
+    padding: 16px;
+}
+
+h2{
+    font: size 20px;
+    font-weight: 700;
+}
+
+.custom-icon{
+    --slds-c-icon-color-foreground-default:#022451;
+}
+.edit-icon{
+    --slds-c-icon-color-background:#022451;   
+}
+.delete-icon{
+    --slds-c-icon-color-background:#e91515;
+}
+
+header{
+    background: #0076d3;
+    color:#fff;
+    padding: 4px 16px;
+    border-top-left-radius:12px;
+    border-top-right-radius:12px;
+}
+.notes{
+    height: 221px;
+    overflow: auto;
+    padding: 4px 16px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 4px 16px;
+    background: #cecece;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.date{
+    color: #6D6D6D;
+    font-size:14px;
+    font-style: italic;
+}
+.cursor{
+    cursor: pointer;
+}
